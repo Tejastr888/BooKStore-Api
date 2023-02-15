@@ -1,0 +1,39 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore dist directory
+dist/
+
+# Ignore environment files
+src/environments/*.ts
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore package-lock.json
+package-lock.json
+
+
+# Ignore IDE-specific files
+/.idea
+/.classpath
+/.project
+/.settings
+# Ignore compiled files
+target/
+build/
+# Ignore test output files
+test-output/
+surefire-reports/
+# Ignore configuration files with sensitive information
+/application.properties
+/application.yml
+*.properties
+*.yml
+# Ignore log files
+log/
+logs/
+*.log
+
+mvnw
