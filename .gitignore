@@ -1,0 +1,20 @@
+# Ignore IDE-specific files
+/.idea
+/.classpath
+/.project
+/.settings
+# Ignore compiled files
+target/
+build/
+# Ignore test output files
+test-output/
+surefire-reports/
+# Ignore configuration files with sensitive information
+/application.properties
+/application.yml
+*.properties
+*.yml
+# Ignore log files
+log/
+logs/
+*.log
