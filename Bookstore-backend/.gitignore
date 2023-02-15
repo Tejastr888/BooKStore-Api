@@ -18,3 +18,5 @@ surefire-reports/
 log/
 logs/
 *.log
+
+mvnw

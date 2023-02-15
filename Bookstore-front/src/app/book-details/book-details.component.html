@@ -1,0 +1,66 @@
+<h2>book-details works!</h2>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Add a new book</h5>
+    <form (ngSubmit)="delete()">
+      <div class="form-group">
+        <label for="titleInput">Title</label>
+        <input type="text" class="form-control" id="titleInput" placeholder="Enter title" value="{{book.title}}">
+      </div>
+      <div class="form-group">
+        <label for="authorInput">Author</label>
+        <input type="text" class="form-control" id="authorInput" placeholder="Enter author" value="{{book.author}}">
+      </div>
+      <div class="form-group">
+        <label for="isbnInput">ISBN</label>
+        <input type="text" class="form-control" id="isbnInput" placeholder="Enter ISBN" value="{{book.isbn}}">
+      </div>
+      <div class="form-group">
+        <label for="descriptionInput">Description</label>
+        <textarea class="form-control" id="descriptionInput" rows="3" [value]="book.description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pagesInput">Number of Pages</label>
+        <input type="number" class="form-control" id="pagesInput" placeholder="Enter number of pages" value="{{book.nbofPages}}">
+      </div>
+      <div class="form-group">
+        <label for="languageInput">Language</label>
+        <input type="text" class="form-control" id="languageInput" placeholder="Enter language" value="{{book.language}}">
+      </div>
+      <div class="form-group">
+        <label for="priceInput">Unit Cost</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+          </div>
+          <input type="number" class="form-control" id="priceInput" placeholder="Enter unit cost" value="{{book.unitcost}}">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">delete</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{book.imageURL}}" class="card-img" alt="{{book.title}}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{book.title}}</h5>
+        <p class="card-text">{{book.description}}</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Author: {{book.author}}</li>
+          <li class="list-group-item">ISBN: {{book.isbn}}</li>
+          <li class="list-group-item">Pages: {{book.nbofPages}}</li>
+          <li class="list-group-item">Language: {{book.language}}</li>
+          <li class="list-group-item">Price: {{book.unitcost | currency:'USD':'symbol'}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  

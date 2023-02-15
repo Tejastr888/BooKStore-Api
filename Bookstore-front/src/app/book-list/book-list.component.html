@@ -1,0 +1,15 @@
+<p>List of All Books -</p>
+
+
+<ul class="list-unstyled">
+    <li class="media my-4" *ngFor="let book of books">
+      <img class="d-flex me-3 rounded" src="{{book.imgUrl}}" alt="{{book.title}}" style="width: 100px;">
+      <div class="media-body">
+        <h5 class="mt-0">{{book.title}}</h5>
+        <p class="text-wrap">{{book.description}}</p>
+        <p class="mb-0"><strong>Author:</strong> {{book.isbn}}</p>
+        <p class="mb-0"><strong>Published:</strong> {{book.publicationDate | date: 'mediumDate'}}</p>
+        <a [routerLink]="['book-detail',book.id]" class="btn btn-primary mt-3">Read More</a>
+      </div>
+    </li>
+  </ul>

@@ -1,0 +1,54 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<form #bookForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" [(ngModel)]="book.title" required>
+  </div>
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="number" class="form-control" id="id" name="id" [(ngModel)]="book.id" required>
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" class="form-control" id="price" name="price" [(ngModel)]="book.price" required>
+  </div>
+  <div class="form-group">
+    <label for="isbn">ISBN</label>
+    <input type="text" class="form-control" id="isbn" name="isbn" [(ngModel)]="book.isbn" required>
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea class="form-control" id="description" name="description" [(ngModel)]="book.description" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="unitCost">Unit Cost</label>
+    <input type="number" class="form-control" id="unitCost" name="unitCost" [(ngModel)]="book.unitCost" required>
+  </div>
+  <div class="form-group">
+    <label for="publicationDate">Publication Date</label>
+    <input type="date" class="form-control" id="publicationDate" name="publicationDate" [(ngModel)]="book.publicationDate" required>
+  </div>
+  <div class="form-group">
+    <label for="nbOfPages">Number of Pages</label>
+    <input type="number" class="form-control" id="nbOfPages" name="nbOfPages" [(ngModel)]="book.nbOfPages" required>
+  </div>
+  <div class="form-group">
+    <label for="imgUrl">Image URL</label>
+    <input type="text" class="form-control" id="imgUrl" name="imgUrl" [(ngModel)]="book.imgUrl" required>
+  </div>
+  <div class="form-group">
+    <label for="language">Language</label>
+    <select class="form-control" id="language" name="language" [(ngModel)]="book.language" required>
+      <option value="0">English</option>
+      <option value="1">Spanish</option>
+      <option value="2">French</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

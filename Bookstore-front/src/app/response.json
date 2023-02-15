@@ -1,0 +1,2 @@
+[{"http":"http://localhost:8080/books"},
+{"id":1,"title":"one piece","description":"one piece","unitCost":12.36,"isbn":"12354","publicationDate":"2021-02-01","nbOfPages":256,"imgUrl":"https://images.penguinrandomhouse.com/cover/9780679783268","language":"RUSSIA"}]
